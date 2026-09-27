@@ -25,7 +25,6 @@ section > h2 {
 }
 
 
-/* Navigation */
 
 .navbar {
     display: flex;
@@ -60,7 +59,6 @@ section > h2 {
 }
 
 
-/* Buttons */
 
 button {
     padding: 10px 16px;
@@ -76,7 +74,6 @@ button:hover {
 }
 
 
-/* Cards */
 
 .cards {
     display: flex;
@@ -103,7 +100,6 @@ button:hover {
 }
 
 
-/* Pagination */
 
 .pagination {
     display: flex;
@@ -129,7 +125,6 @@ button:hover {
 }
 
 
-/* Comment */
 
 .comment {
     display: flex;
@@ -166,7 +161,6 @@ button:hover {
 }
 
 
-/* Pricing */
 
 .pricing {
     display: flex;

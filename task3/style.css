@@ -76,7 +76,6 @@ header p {
 }
 
 
-/* GRID MODE */
 
 .grid-mode {
     grid-template-columns:
@@ -92,7 +91,6 @@ header p {
 }
 
 
-/* LIST MODE */
 
 .list-mode {
     grid-template-columns: 1fr;
@@ -129,7 +127,6 @@ header p {
 }
 
 
-/* MAGAZINE MODE */
 
 .magazine-mode {
     grid-template-columns:
