@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1eb;
+    color: #24211f;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.japanese {
+    font-size: 18px;
+    color: #a33a3a;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 8px 0;
+}
+
+header p {
+    margin: 0;
+    color: #706963;
+}
+
+.articles {
+    display: grid;
+    gap: 18px;
+}
+
+.item {
+    display: flex;
+    background-color: #fffdf9;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #a33a3a;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    margin: 0 0 12px;
+}
+
+.content p {
+    margin: 0 0 15px;
+    line-height: 1.5;
+}
+
+.content time {
+    margin-top: auto;
+    color: #8a817a;
+    font-size: 13px;
+}
+
+
+/* GRID MODE */
+
+.grid-mode {
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+}
+
+.grid-mode .item {
+    flex-direction: column;
+}
+
+.grid-mode .picture {
+    padding: 45px 20px;
+}
+
+
+/* LIST MODE */
+
+.list-mode {
+    grid-template-columns: 1fr;
+}
+
+.list-mode .item {
+    flex-direction: row;
+}
+
+.list-mode .picture {
+    flex: 0 0 18%;
+}
+
+.list-mode .content {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.list-mode .content h2 {
+    flex: 0 0 18%;
+    margin: 0;
+}
+
+.list-mode .content p {
+    flex: 1;
+    margin: 0;
+}
+
+.list-mode .content time {
+    margin-top: 0;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+
+/* MAGAZINE MODE */
+
+.magazine-mode {
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+
+    grid-auto-flow: dense;
+}
+
+.magazine-mode .item {
+    flex-direction: column;
+}
+
+.magazine-mode .lead {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.magazine-mode .lead .picture {
+    flex: 1;
+    font-size: 38px;
+}
+
+.magazine-mode .lead h2 {
+    font-size: 30px;
+}

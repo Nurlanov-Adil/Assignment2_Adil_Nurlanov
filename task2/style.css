@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f5f2;
+    color: #242424;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section > h2 {
+    margin-bottom: 15px;
+    color: #6d4c7d;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 18px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #6d4c7d;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #20242a;
+    text-decoration: none;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background-color: #6d4c7d;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #51385e;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.card button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.pages {
+    display: flex;
+    gap: 8px;
+}
+
+.results {
+    margin-left: auto;
+}
+
+
+/* Comment */
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #6d4c7d;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.comment-text {
+    flex: 1;
+}
+
+.comment-text p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+
+/* Pricing */
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.plan button {
+    margin-top: auto;
+}
+
+.recommended {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee7f1;
+}
+
+.badge {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6d4c7d;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-tag {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6d4c7d;
+    margin-bottom: 5px;
+}
